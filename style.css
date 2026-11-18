@@ -1,0 +1,186 @@
+:root{--bg:#02040a;--tx:#dbeafe;--n1:#00e5ff;--n2:#1e6bff;--n3:#0a2a6b;--card:rgba(0,140,255,.07);--bd:rgba(0,229,255,.28)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{font-family:'Poppins','Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.7;overflow-x:hidden;
+ background-image:repeating-linear-gradient(115deg,transparent 0 38px,rgba(0,120,255,.05) 38px 40px)}
+a{color:var(--n1)}
+.arya_blob{position:fixed;border-radius:50%;filter:blur(90px);z-index:-1;opacity:.55;animation:arya_float 14s ease-in-out infinite alternate}
+.arya_b1{width:45vw;height:45vw;background:radial-gradient(circle,var(--n2),transparent 70%);top:-10vw;left:-10vw}
+.arya_b2{width:40vw;height:40vw;background:radial-gradient(circle,var(--n1),transparent 70%);bottom:-10vw;right:-8vw;animation-delay:-6s}
+@keyframes arya_float{to{transform:translate(8vw,6vw) scale(1.2)}}
+.arya_wrap{max-width:1000px;margin:auto;padding:0 5%}
+
+
+
+
+
+
+
+.arya_btn{display:inline-block;background:linear-gradient(90deg,var(--n1),var(--n2));color:#00101f;padding:10px 24px;border-radius:30px;text-decoration:none;border:0;font-weight:700;cursor:pointer;margin:18px 10px 0 0;font-size:1rem;box-shadow:0 0 18px rgba(0,229,255,.5)}
+.arya_btn2{background:transparent;color:var(--n1);border:2px solid var(--n1);box-shadow:none}
+.arya_sec{padding:80px 0}
+h2{font-size:2rem;margin-bottom:24px;color:#fff;text-shadow:0 0 18px rgba(0,229,255,.6)}
+h3{color:var(--n1);margin-bottom:6px}
+.arya_grid2{display:grid;grid-template-columns:1fr 1fr;gap:30px}.arya_center{align-items:center}
+.arya_grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.arya_card,.arya_panel{background:var(--card);border:1px solid var(--bd);padding:22px;border-radius:14px;transition:.3s;backdrop-filter:blur(4px)}
+.arya_card:hover{transform:translateY(-6px);box-shadow:0 0 25px rgba(0,229,255,.35);border-color:var(--n1)}
+.arya_card span{font-size:2rem}.arya_card ul{margin-left:20px}
+.arya_bemlogo{width:100%;max-width:280px;justify-self:center;border-radius:50%;box-shadow:0 0 40px rgba(30,107,255,.6)}
+
+
+
+
+#arya_form{display:grid;gap:12px;max-width:600px}
+#arya_form input,#arya_form textarea{padding:12px;border-radius:8px;border:1px solid var(--bd);font:inherit;background:rgba(0,20,60,.5);color:#fff}
+#arya_form input:focus,#arya_form textarea:focus{outline:0;border-color:var(--n1);box-shadow:0 0 12px rgba(0,229,255,.5)}
+#arya_status{font-weight:600}
+
+.arya_rev{opacity:0;transform:translateY(30px);transition:.7s}.arya_rev.arya_show{opacity:1;transform:none}
+@media(max-width:760px){
+ .arya_grid2{grid-template-columns:minmax(0,1fr)}
+}
+
+.arya_badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.arya_badges span{border:1px solid var(--bd);background:var(--card);padding:3px 12px;border-radius:20px;font-size:.82rem;color:var(--n1)}
+
+.arya_avatar{flex:none;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#00101f;background:linear-gradient(135deg,var(--n1),var(--n2));box-shadow:0 0 20px var(--n1)}
+.arya_info{list-style:none;margin:12px 0}.arya_info li{padding:6px 0;border-bottom:1px solid var(--bd)}
+#arya_form h3{margin-top:0}
+.arya_badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.arya_badge{display:inline-block;font-size:.78rem;font-weight:600;padding:3px 12px;border:1px solid var(--n1);border-radius:20px;color:var(--n1);background:rgba(0,229,255,.08);vertical-align:middle}
+
+
+
+.arya_label{font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;color:#7fb4ff;margin-bottom:10px}
+.arya_dekanrow{display:flex;gap:16px;align-items:center}
+.arya_avatar{flex:none;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#00101f;background:linear-gradient(135deg,var(--n1),var(--n2));box-shadow:0 0 20px rgba(0,229,255,.5)}
+
+
+
+/* Hero banner berlatar foto (tata letak seperti referensi) */
+.arya_badge_solid{background:var(--n1);color:#00101f}
+
+#arya_progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--n1),var(--n2));z-index:20;box-shadow:0 0 10px var(--n1)}
+.arya_galeri{margin-top:40px}.arya_galeri figure{margin:0}
+
+
+.arya_galeri figcaption{font-size:.85rem;opacity:.7;margin-top:8px;text-align:center}
+#arya_lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:30;cursor:zoom-out}
+#arya_lightbox.arya_open{display:flex}
+#arya_lightbox img{max-width:94vw;max-height:90vh;border-radius:10px;box-shadow:0 0 50px rgba(0,229,255,.4)}
+#arya_lightbox span{position:absolute;top:18px;right:24px;font-size:1.8rem;color:var(--n1)}
+#arya_totop{position:fixed;right:28px;bottom:92px;width:44px;height:44px;border-radius:50%;border:1px solid var(--n1);background:rgba(2,4,10,.8);color:var(--n1);font-size:1.3rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:15}
+#arya_totop.arya_show{opacity:1;pointer-events:auto;box-shadow:0 0 15px rgba(0,229,255,.5)}
+.arya_grid2>*,.arya_grid3>*,.arya_dekanrow>div{min-width:0}
+h2,h3,p,li{overflow-wrap:anywhere}
+@media(max-width:760px){.arya_dekanrow{flex-direction:column;align-items:flex-start}}
+#arya_form{grid-template-columns:minmax(0,1fr)}
+#arya_form input,#arya_form textarea{width:100%;min-width:0}
+.arya_btnrow{display:flex;flex-wrap:wrap;gap:4px}
+[hidden]{display:none!important}
+.arya_head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:20px}.arya_head h2{margin-bottom:4px}.arya_sub{opacity:.75;font-size:.9rem}
+.arya_prodigrid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:24px;align-items:start}
+.arya_tabs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
+.arya_tab{display:flex;flex-direction:column;gap:3px;text-align:left;padding:16px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:14px;cursor:pointer;font:inherit;transition:.25s}
+.arya_tab strong{font-size:1.1rem;color:#fff;margin:6px 0 2px}.arya_tab small{font-size:.78rem;opacity:.85}.arya_tab em{font-style:normal;color:var(--n1);font-weight:600;font-size:.85rem;margin-top:8px;padding-top:8px;border-top:1px solid var(--bd)}
+.arya_tab:hover{border-color:var(--n1);box-shadow:0 0 18px rgba(0,229,255,.3)}
+.arya_tab.arya_active{border-color:var(--n1);background:rgba(0,150,255,.16);box-shadow:0 0 22px rgba(0,229,255,.4)}
+.arya_tabtop{display:flex;justify-content:space-between;align-items:center}
+.arya_rate{font-size:.75rem;font-weight:600;padding:2px 10px;border-radius:20px;border:1px solid #2ee59d;color:#2ee59d;background:rgba(46,229,157,.08)}.arya_rate2{border-color:#4da3ff;color:#4da3ff;background:rgba(77,163,255,.1)}
+.arya_mono{font-family:'Courier New',monospace;font-size:.78rem}
+.arya_panel{display:none;padding:24px}.arya_panel.arya_active{display:block}
+.arya_crumb{font-size:.8rem;opacity:.75}.arya_phead{margin-top:12px;font-size:.9rem}.arya_ptitle{font-size:clamp(1.6rem,4vw,2.3rem);color:#fff;margin:2px 0 12px}
+.arya_meta{list-style:none;display:flex;flex-wrap:wrap;gap:8px 28px;padding:12px 0;border-top:1px solid var(--bd);margin-bottom:12px}.arya_meta small,.arya_mutu small{display:block;font-size:.75rem;opacity:.7}
+.arya_panel h4{color:#fff;margin:6px 0 10px}
+.arya_mutu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.arya_mutu>div{background:rgba(0,120,255,.08);border:1px solid var(--bd);border-radius:10px;padding:10px 12px;font-size:.85rem;overflow-wrap:anywhere}
+.arya_sk{margin:14px 0 0}.arya_sk img{width:100%;max-width:560px;display:block;border-radius:10px;border:1px solid var(--bd);cursor:zoom-in;transition:.3s}.arya_sk img:hover{box-shadow:0 0 25px rgba(0,229,255,.4)}.arya_sk figcaption{font-size:.8rem;opacity:.75;margin-top:6px}
+.arya_note{font-size:.78rem;opacity:.65;margin:10px 0}
+.arya_career{margin-top:16px;padding-top:16px;border-top:1px solid var(--bd)}.arya_career p{margin:8px 0}
+.arya_chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}.arya_chips span{border:1px solid var(--bd);border-radius:20px;padding:3px 14px;font-size:.82rem;background:rgba(255,255,255,.04)}
+.arya_btnprodi{display:inline-flex;flex-direction:column;align-items:center;line-height:1.3;margin-top:4px}.arya_btnprodi small{font-family:'Courier New',monospace;font-weight:400;font-size:.72rem}
+.arya_portal{display:grid;gap:14px}.arya_portalcard small{display:block;text-align:center;margin-top:8px;opacity:.8}.arya_portalcard .arya_btn{display:block;text-align:center;margin:12px 0 0}
+.arya_plink{display:flex;gap:14px;align-items:center;text-decoration:none;color:var(--tx)}.arya_plink span{font-size:1.8rem}.arya_plink small{display:block;opacity:.8}
+.arya_gtitle{font-size:1.3rem;margin-bottom:14px;color:#fff;text-shadow:0 0 14px rgba(0,229,255,.5)}
+
+.arya_galeri img,.arya_galeri video{width:100%;border-radius:16px;border:1px solid var(--bd);display:block;max-height:460px;object-fit:cover;object-position:center 65%;background:#000}
+.arya_galeri img{cursor:zoom-in;transition:.3s}.arya_galeri img:hover{box-shadow:0 0 30px rgba(0,229,255,.45)}
+#arya_footer{border-top:1px solid var(--bd);background:rgba(0,10,30,.6);padding:40px 0 18px;font-size:.88rem}
+.arya_fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.arya_fgrid p{margin:6px 0;opacity:.85}.arya_fgrid h4{color:var(--n1);margin-bottom:8px;text-transform:uppercase;font-size:.8rem;letter-spacing:1px}
+.arya_fgrid ul{list-style:none}.arya_fgrid li{padding:3px 0;opacity:.9}.arya_fgrid a{text-decoration:none}.arya_fgrid a:hover{text-decoration:underline}
+.arya_flogo{display:flex;align-items:center;gap:10px}.arya_flogo img{height:40px;border-radius:50%}
+.arya_copy{text-align:center;border-top:1px solid var(--bd);margin-top:26px;padding-top:16px;opacity:.7;font-size:.8rem}
+@media(max-width:860px){.arya_prodigrid{grid-template-columns:minmax(0,1fr)}.arya_fgrid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){.arya_tabs{grid-template-columns:minmax(0,1fr)}}
+
+.arya_gmedia{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:18px;align-items:start}
+.arya_gphotos{display:grid;gap:18px}.arya_gphotos img{max-height:420px}
+.arya_galeri video{max-height:640px;object-fit:contain}
+@media(max-width:760px){.arya_gmedia{grid-template-columns:minmax(0,1fr)}.arya_galeri video{max-height:70vh}}
+
+@media(max-width:480px){.arya_mutu{grid-template-columns:minmax(0,1fr)}}
+
+/* Navbar melayang berbentuk pil */
+#arya_header{position:fixed;top:14px;left:50%;transform:translateX(-50%);width:min(1240px,calc(100% - 32px));height:66px;padding:0 14px 0 16px;display:flex;align-items:center;justify-content:space-between;background:#f6faff;border-radius:40px;box-shadow:0 10px 35px rgba(0,0,0,.5),0 0 28px rgba(0,229,255,.28);z-index:10}
+.arya_logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.arya_logo img{height:46px;width:46px;border-radius:50%;object-fit:cover}
+.arya_brand{display:flex;flex-direction:column;line-height:1.15;padding-left:12px;border-left:1px solid #cfdcf0}
+.arya_brand b{color:#0a1f44;font-size:1.02rem}.arya_brand em{font-style:normal;color:#0a6bff}
+.arya_brand small{color:#0a6bff;font-size:.6rem;letter-spacing:.3em;font-weight:600}
+#arya_nav{display:flex;gap:4px}
+#arya_nav a{color:#0a1f44;text-decoration:none;font-weight:600;font-size:.9rem;padding:9px 16px;border-radius:30px;transition:.2s}
+#arya_nav a:hover{background:#e6f0ff}
+#arya_nav a.arya_active{background:#d3e8ff;color:#0a58ff}
+#arya_menubtn{display:none;background:#e6f0ff;border:0;color:#0a58ff;width:42px;height:42px;border-radius:50%;font-size:1.3rem;cursor:pointer}
+@media(max-width:1000px){
+ #arya_menubtn{display:block}
+ #arya_nav{position:absolute;top:78px;left:0;right:0;background:#f6faff;border-radius:24px;padding:10px;display:none;flex-direction:column;box-shadow:0 12px 35px rgba(0,0,0,.5)}
+ #arya_nav.arya_open{display:flex}#arya_nav a{padding:12px 16px}
+}
+/* Hero layar penuh (tata letak seperti referensi) */
+.arya_hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 70px;background:linear-gradient(90deg,rgba(2,4,10,.95) 0%,rgba(3,14,50,.78) 50%,rgba(2,4,10,.5) 100%),url(images/foto-fakultas.jpg) center 60%/cover no-repeat}
+.arya_herowrap{width:min(1240px,100%);margin:auto;padding:0 clamp(22px,6vw,90px)}
+.arya_eyebrow{display:flex;align-items:center;gap:14px;color:var(--n1);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.9rem}
+.arya_eyebrow::before{content:"";width:48px;height:3px;background:var(--n1);box-shadow:0 0 12px var(--n1)}
+.arya_hero h1{font-size:clamp(2.4rem,7vw,5.2rem);line-height:1.08;font-weight:800;color:#fff;margin:26px 0 28px}
+.arya_hero h1 em{font-style:normal;color:var(--n1);text-shadow:0 0 28px rgba(0,229,255,.55)}
+.arya_herodesc{max-width:640px;font-size:1.15rem;color:#cfe0f5;border-left:4px solid var(--n1);padding-left:20px;margin-bottom:34px}
+.arya_hero .arya_btnrow{gap:14px}
+.arya_hero .arya_btn{border-radius:12px;padding:15px 30px;margin:0;display:inline-flex;gap:10px;align-items:center}
+.arya_hero .arya_btn2{background:rgba(2,4,10,.55);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.arya_hero .arya_badges{margin:38px 0 0}
+
+/* Ikon Instagram melayang (pojok kanan bawah) */
+#arya_ig{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%);box-shadow:0 6px 20px rgba(0,0,0,.4);z-index:16;transition:.25s}
+#arya_ig:hover{transform:scale(1.1)}
+.arya_igtip{position:absolute;right:72px;background:#fff;color:#0a1f44;font-size:.8rem;font-weight:600;padding:5px 12px;border-radius:20px;white-space:nowrap;opacity:0;transform:translateX(8px);transition:.25s;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+#arya_ig:hover .arya_igtip,#arya_ig:focus-visible .arya_igtip{opacity:1;transform:none}
+
+/* Latar putih untuk bagian isi (Beranda dan footer tidak diubah) */
+main>section:not(#arya_beranda){--tx:#1e2d4d;--n1:#0a5cff;--n2:#0a8cff;--card:#f2f7ff;--bd:rgba(10,92,255,.22);background:#fff;color:var(--tx);border-top:1px solid #e3ecfb}
+main>section:not(#arya_beranda) h2,main>section:not(#arya_beranda) .arya_gtitle,main>section:not(#arya_beranda) .arya_tab strong,main>section:not(#arya_beranda) .arya_ptitle,main>section:not(#arya_beranda) .arya_panel h4{color:#0a1f44;text-shadow:none}
+main>section:not(#arya_beranda) .arya_btn{color:#fff;box-shadow:0 6px 18px rgba(10,92,255,.35)}
+main>section:not(#arya_beranda) .arya_btn2{background:transparent;color:var(--n1);box-shadow:none}
+main>section:not(#arya_beranda) .arya_card,main>section:not(#arya_beranda) .arya_panel{box-shadow:0 2px 12px rgba(10,50,120,.08)}
+main>section:not(#arya_beranda) .arya_card:hover,main>section:not(#arya_beranda) .arya_tab:hover,main>section:not(#arya_beranda) .arya_tab.arya_active{box-shadow:0 8px 24px rgba(10,92,255,.2)}
+main>section:not(#arya_beranda) .arya_label{color:#4a6592}
+main>section:not(#arya_beranda) .arya_badge_solid,main>section:not(#arya_beranda) .arya_avatar{color:#fff}
+main>section:not(#arya_beranda) .arya_avatar{box-shadow:0 4px 14px rgba(10,92,255,.35)}
+main>section:not(#arya_beranda) .arya_rate{color:#0a8f5b;border-color:#0a8f5b;background:rgba(10,143,91,.08)}
+main>section:not(#arya_beranda) .arya_rate2{color:#1a6fd6;border-color:#1a6fd6;background:rgba(26,111,214,.08)}
+main>section:not(#arya_beranda) .arya_chips span{background:#fff}
+main>section:not(#arya_beranda) .arya_bemlogo{box-shadow:0 6px 28px rgba(10,92,255,.35)}
+main>section:not(#arya_beranda) #arya_form input,main>section:not(#arya_beranda) #arya_form textarea{background:#fff;color:#1e2d4d}
+main>section:not(#arya_beranda) #arya_form input:focus,main>section:not(#arya_beranda) #arya_form textarea:focus{box-shadow:0 0 0 3px rgba(10,92,255,.2)}
+
+/* Ex Ketua BEM FT */
+.arya_ketua{margin-top:56px}
+.arya_ketuasub{margin:-12px 0 22px;opacity:.8}
+.arya_ketuagrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.arya_ketuacard{text-align:center;padding:16px 16px 20px}
+.arya_ketuafoto{aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:radial-gradient(circle at 50% 28%,#fff 0%,#d6e6ff 55%,#a9c9ff 100%);margin-bottom:14px}
+.arya_ketuafoto img{width:100%;height:100%;display:block;object-fit:contain;object-position:bottom;-webkit-mask-image:linear-gradient(#000 84%,transparent);mask-image:linear-gradient(#000 84%,transparent);transition:transform .4s}
+.arya_ketuacard:hover .arya_ketuafoto img{transform:scale(1.04)}
+.arya_ketuacard h4{margin:10px 0 2px;font-size:1.1rem;color:#0a1f44}
+.arya_ketuacard p{font-size:.9rem;opacity:.8}
+.arya_ketuacard .arya_badge{font-size:.8rem;display:inline-block;padding:3px 14px}
